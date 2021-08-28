@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:trace-console": "TRACE_TARGET=CONSOLE yarn build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepublish": "cd ../next.js/packages/next && yarn prepublish",
+    "cn": "rm -rf ./node_modules/next && yarn install --force"
   },
   "dependencies": {
-    "next": "11.1.0",
+    "next": "file:../next.js/packages/next",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
