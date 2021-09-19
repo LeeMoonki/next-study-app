@@ -8,6 +8,7 @@
     "build:trace-console": "TRACE_TARGET=CONSOLE yarn build",
     "start": "next start",
     "lint": "next lint",
+    "pre": "yarn prepublish",
     "prepublish": "cd ../next.js/packages/next && yarn prepublish",
     "cn": "rm -rf ./node_modules/next && yarn install --force"
   },
